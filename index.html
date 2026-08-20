@@ -3,85 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards de Moda - Mitos e Verdades</title>
+    <title>Glow - Mitos e Verdades do Universo da Moda</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">Start by Alura</h1>
-        <p class="cabecalho__subtitulo">Desmistificando o Universo da Moda e Estilo</p>
+        <p class="cabecalho__subtitulo">Desafios Avançados: Você realmente conhece a História e a Indústria da Moda?</p>
     </header>
 
     <main class="conteudo-principal">
         <section class="container-cards">
 
             <!-- Card 1 -->
-            <article class="flashcard">
+            <article class="flashcard" onclick="virarCard(this)">
                 <div class="flashcard__interno">
                     <div class="flashcard__frente">
-                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Modelo vestindo roupas pretas elegantes em um cenário minimalista">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Arara com vestidos pretos estruturados de grife">
                         <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
-                        <p class="flashcard__texto">"Roupas pretas sempre emagrecem e listras horizontais sempre engordam."</p>
+                        <p class="flashcard__texto">"O icônico 'pretinho básico' (Little Black Dress) foi uma invenção exclusiva de Coco Chanel em 1926."</p>
                     </div>
                     <div class="flashcard__verso flashcard__verso--mito">
                         <h2 class="flashcard__status">MITO!</h2>
-                        <p class="flashcard__texto">O caimento do tecido e o corte da peça importam muito mais do que a cor. Listras horizontais finas e bem espaçadas podem, inclusive, alongar a silhueta.</p>
-                        <a class="flashcard__link" href="https://globo.com" target="_blank">Saiba mais na Vogue</a>
+                        <p class="flashcard__texto">Mulheres já usavam vestidos pretos antes. O mérito de Chanel (publicado na Vogue em 1926) foi democratizar a cor — associada ao luto e à servidão — como símbolo de elegância e modernidade para o dia a dia.</p>
+                        <a class="flashcard__link" href="https://globo.com" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
                     </div>
                 </div>
             </article>
 
             <!-- Card 2 -->
-            <article class="flashcard">
+            <article class="flashcard" onclick="virarCard(this)">
                 <div class="flashcard__interno">
                     <div class="flashcard__frente">
-                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Arara de roupas com peças minimalistas em tons neutros">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Modelos desfilando em passarela de alta costura em Paris">
                         <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
-                        <p class="flashcard__texto">"Moda e Estilo são exatamente a mesma coisa no dia a dia."</p>
+                        <p class="flashcard__texto">"Para uma grife ser considerada de Alta Costura, as peças precisam obrigatoriamente ser feitas 100% à mão em Paris."</p>
                     </div>
-                    <div class="flashcard__verso flashcard__verso--mito">
-                        <h2 class="flashcard__status">MITO!</h2>
-                        <p class="flashcard__texto">A moda é o que a indústria propõe e é passageira. O estilo é a sua identidade e a forma como você traduz essas tendências para a sua própria realidade.</p>
-                        <a class="flashcard__link" href="https://elle.com.br" target="_blank">Saiba mais na Elle</a>
+                    <div class="flashcard__verso flashcard__verso--verdade">
+                        <h2 class="flashcard__status">VERDADE!</h2>
+                        <p class="flashcard__texto">É uma regra rígida da Federação da Alta Costura e da Moda em Paris. Cada peça deve ser feita sob medida, à mão, em ateliês localizados em Paris que empreguem pelo menos 15 pessoas em tempo integral.</p>
+                        <a class="flashcard__link" href="https://fhcm.paris" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
                     </div>
                 </div>
             </article>
 
             <!-- Card 3 -->
-            <article class="flashcard">
+            <article class="flashcard" onclick="virarCard(this)">
                 <div class="flashcard__interno">
                     <div class="flashcard__frente">
-                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Camiseta de algodão básica branca dobrada sobre uma mesa">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Bolsa de luxo clássica de couro acolchoado">
                         <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
-                        <p class="flashcard__texto">"O algodão é uma das fibras naturais mais utilizadas no mundo têxtil."</p>
+                        <p class="flashcard__texto">"O couro legítimo sempre possui um impacto ambiental maior para o planeta do que o couro sintético (plástico/PU)."</p>
                     </div>
-                    <div class="flashcard__verso flashcard__verso--verdade">
-                        <h2 class="flashcard__status">VERDADE!</h2>
-                        <p class="flashcard__texto">O algodão domina a produção de roupas devido ao seu conforto, respirabilidade e versatilidade de tecimento para blusas, calças e vestidos.</p>
-                        <a class="flashcard__link" href="https://abit.org.br" target="_blank">Saiba mais na ABIT</a>
+                    <div class="flashcard__verso flashcard__verso--mito">
+                        <h2 class="flashcard__status">MITO!</h2>
+                        <p class="flashcard__texto">O debate é complexo. O couro sintético é derivado do petróleo e demora centenas de anos para se decompor, gerando microplásticos. O couro legítimo vem da pecuária, mas sua durabilidade e biodegradação podem ser maiores.</p>
+                        <a class="flashcard__link" href="https://fashionrevolution.org" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
                     </div>
                 </div>
             </article>
 
             <!-- Card 4 -->
-            <article class="flashcard">
+            <article class="flashcard" onclick="virarCard(this)">
                 <div class="flashcard__interno">
                     <div class="flashcard__frente">
-                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Close-up de calça jeans azul clássica evidenciando as costuras">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Pessoa vestindo camisa social branca de alfaiataria fina">
                         <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
-                        <p class="flashcard__texto">"A calça jeans foi originalmente criada para ser uma roupa de trabalho."</p>
+                        <p class="flashcard__texto">"O terno moderno masculino ocidental foi inspirado nos uniformes militares e nas roupas utilitárias de montaria."</p>
                     </div>
                     <div class="flashcard__verso flashcard__verso--verdade">
                         <h2 class="flashcard__status">VERDADE!</h2>
-                        <p class="flashcard__texto">Criada no século XIX por Levi Strauss, a calça jeans de brim com rebites de cobre foi feita para mineradores e operários que precisavam de tecidos muito resistentes.</p>
-                        <a class="flashcard__link" href="https://levis.com.br" target="_blank">Saiba mais na Levi's</a>
+                        <p class="flashcard__texto">A estrutura do terno (incluindo as fendas traseiras do paletó para facilitar sentar no cavalo e os botões nas mangas para evitar que soldados limpassem o rosto na farda) evoluiu diretamente de trajes utilitários e militares.</p>
+                        <a class="flashcard__link" href="https://gq.com.br" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
                     </div>
                 </div>
             </article>
 
-        </section>
-    </main>
+            <!-- Card 5 -->
+            <article class="flashcard" onclick="virarCard(this)">
+                <div class="flashcard__interno">
+                    <div class="flashcard__frente">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Tecido de seda pura brilhante se movendo suavemente">
+                        <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
+                        <p class="flashcard__texto">"A seda natural é extraída de plantas e folhas específicas encontradas apenas no continente asiático."</p>
+                    </div>
+                    <div class="flashcard__verso flashcard__verso--mito">
+                        <h2 class="flashcard__status">MITO!</h2>
+                        <p class="flashcard__texto">A seda é uma fibra animal, produzida pelos casulos das lagartas da espécie Bombyx mori (bicho-da-seda). Embora a amoreira (folha que elas comem) seja vegetal, a fibra em si é puramente proteica e animal.</p>
+                        <a class="flashcard__link" href="https://elle.com.br" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
+                    </div>
+                </div>
+            </article>
 
-</body>
-</html>
+            <!-- Card 6 -->
+            <article class="flashcard" onclick="virarCard(this)">
+                <div class="flashcard__interno">
+                    <div class="flashcard__frente">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Modelo usando espartilho moderno estilizado">
+                        <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
+                        <p class="flashcard__texto">"Na era vitoriana, o uso do espartilho (corset) era uma imposição exclusivamente masculina para controlar as mulheres."</p>
+                    </div>
+                    <div class="flashcard__verso flashcard__verso--mito">
+                        <h2 class="flashcard__status">MITO!</h2>
+                        <p class="flashcard__texto">Historiadores mostram que o corset era visto pelas próprias mulheres como símbolo de status social, postura, decência moral e até suporte físico. Muitas mulheres da época defendiam o uso contra críticas médicas masculinas.</p>
+                        <a class="flashcard__link" href="https://elle.com.br" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="flashcard" onclick="virarCard(this)">
+                <div class="flashcard__interno">
+                    <div class="flashcard__frente">
+                        <img class="flashcard__imagem" src="https://unsplash.com" alt="Óculos escuros e relógio de luxo de marca famosa">
+                        <h2 class="flashcard__titulo-face">Mito ou Verdade?</h2>
+                        <p class="flashcard__texto">"A maior parte do lucro das grandes grifes de luxo não vem das roupas desfiladas, mas de cosméticos e acessórios."</p>
+                    </div>
+                    <div class="flashcard__verso flashcard__verso--verdade">
+                        <h2 class="flashcard__status">VERDADE!</h2>
+                        <p class="flashcard__texto">É o chamado 'efeito de entrada'. Os desfiles conceituais constroem o desejo da marca, mas o faturamento real e massivo vem da venda de perfumes, batons, óculos de sol e carteiras de menor custo de produção.</p>
+                        <a class="flashcard__link" href="https://globo.com" target="_blank" onclick="event.stopPropagation()">Estudar mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
